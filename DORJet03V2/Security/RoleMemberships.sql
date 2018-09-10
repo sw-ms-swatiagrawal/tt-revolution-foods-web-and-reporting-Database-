@@ -1,0 +1,14 @@
+﻿ALTER ROLE [db_owner] ADD MEMBER [RevFoodsWeb];
+
+
+GO
+ALTER ROLE [db_owner] ADD MEMBER [RevFoodsDOR];
+
+
+GO
+ALTER ROLE [db_owner] ADD MEMBER [REVFOODS\JET-ADMINS];
+
+
+GO
+ALTER ROLE [db_owner] ADD MEMBER [REVFOODS\softweb2];
+

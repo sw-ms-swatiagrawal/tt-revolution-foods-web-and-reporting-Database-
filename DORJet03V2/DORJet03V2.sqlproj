@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DORJet03V2</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{f053bc08-eb3d-4ea3-b57b-1ec4b874a083}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DORJet03V2</RootNamespace>
+    <AssemblyName>DORJet03V2</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\User Defined Types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\RF_DWH_XREF_APPLECORE_ITEM_IDS_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_USERS_1.sql" />
+    <Build Include="dbo\Tables\TMP_IMPORT_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_ROLES_1.sql" />
+    <Build Include="dbo\Tables\XREF_USER_FACILITY_ROLES_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_MODULES_1.sql" />
+    <Build Include="dbo\Tables\Iteam_mapping_h_1.sql" />
+    <Build Include="dbo\Tables\Item_Mapping_0809_1.sql" />
+    <Build Include="dbo\Tables\Standards__1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_ITEM_1.sql" />
+    <Build Include="dbo\Tables\AppleCore_Stage_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_ITEM_newitems_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_BUILD_GRADE_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_CATEGORY_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_DT_REASON_CATEGORY_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_DTDETAILS_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_DTREASON_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_FACILITY_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_ROLE_FACILITY_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_GEN_LOG_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_ITEM_h083117_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_LINE_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_RE_RUN_RATE_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_SCHEDULE_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_SHIFT_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_VARIATION_MASTER_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_SHIFT_ENTRY_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_APPLECORE_ITEM_NOT_FOUND_1.sql" />
+    <Build Include="dbo\Tables\XREF_ITEM_PRODUCT_VARIATION_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_WASTE_TYPE_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_STATUS_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_WASTEENTRY_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_XREF_APPLECORE_ITEMS_1.sql" />
+    <Build Include="dbo\Tables\schedule_backup_13_06_2018_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_XREF_LINE_FACILITY_1.sql" />
+    <Build Include="dbo\Tables\SCHEDULE_BACKUP_14_06_2018_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_SCHEDULE_backup_15_06_2018_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_USER_ROLE_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_ROLES_MODULE_1.sql" />
+    <Build Include="dbo\Tables\RF_DWH_DEVIATION_1.sql" />
+    <Build Include="dbo\Tables\Error_log_DOR_1.sql" />
+    <Build Include="dbo\Views\vw_RF_DOR_UPLOAD_1.sql" />
+    <Build Include="dbo\Views\VW_RF_DWH_LINE_ITEM_DETAILS_1.sql" />
+    <Build Include="dbo\Views\VW_RF_WEEKLY_MEAL_PLANNING_AND_COSTING_STATISTICS_1.sql" />
+    <Build Include="Security\RevFoodsWeb_1.sql" />
+    <Build Include="Security\RevFoodsDOR_1.sql" />
+    <Build Include="Security\REVFOODS_JET-ADMINS_1.sql" />
+    <Build Include="Security\RevFoodsWebCR_2.sql" />
+    <Build Include="Security\RevFoodsWebCR_3.sql" />
+    <Build Include="Security\REVFOODS_softweb2_2.sql" />
+    <Build Include="Security\REVFOODS_softweb2_3.sql" />
+    <Build Include="Security\RoleMemberships_1.sql" />
+    <Build Include="Security\RoleMemberships_2.sql" />
+    <Build Include="Security\RoleMemberships_3.sql" />
+    <Build Include="Security\RoleMemberships_4.sql" />
+    <Build Include="dbo\Functions\fn_GetMaxSeqNumber_1.sql" />
+    <Build Include="dbo\Functions\fn_GetMaxSeqNumberForvarient_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_LINE_FACILITY_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_LINE_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_LINE_SHIFT_SUMMARY_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_LINESHIFT_START_ITEMS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_RE_RUN_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_REASON_CATEGORY_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_REP_DTPARETTO_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SHIFT_ENTRY_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SHIFT_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_WASTE_TYPE_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_USERS_MANAGE_Role_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_WASTEENTRY_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\GetUserRoles1_1.sql" />
+    <Build Include="dbo\Stored Procedures\ImportExcel_backup_20180806_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_MANAGE_08272018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_DELETE_ITEM_08272018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_USER_AUTHENTICATE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_USER_ROLES_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_USERS_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_STARTTIME_ENDTIME_1.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateLine_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_Start_End_Time_Planning_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_Start_End_Time_Production_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_USERS_MANAGE_Role_Delete_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_VARIATION_MASTER_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_ROLES_FACILITY_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_LOAD_APPLECORE_SCHEDULE_backup_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_MANAGE_LOAD_APPLECORE_SCHEDULE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_LOAD_APPLECORE_SCHEDULE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_ROLES_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_ROLES_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_VARIATION_LIST_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_VARIATION_MASTER_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_DEVIATION_MANAGE_13_06_2018_BACKUP_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_XREF_VARIATION_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_SCHEDULE_DETAILS_13_06_2018_BACKUP_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_USERS_MANAGE_USERS_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_VARIATION_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_STATUS_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\USP_DOR_GET_USER_DETAILS_RESET_PASSWORD_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_Start_End_Time_Production_13_06_2018_BACKUP_1.sql" />
+    <Build Include="dbo\Stored Procedures\USP_DOR_GET_ITEM_VARIATIONS_FROM_ITEMID_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_VarientSeqno_backup_14_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_MANAGE_LOAD_APPLECORE_SCHEDULE_backup_14_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_VARIATION_MOVEUP_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_STARTTIME_ENDTIME_backup_14_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\USP_DOR_COPY_STANDARDS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_ProductSeqno_backup_14_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\USP_DOR_GET_ITEM_VARIATIONS_FROM_ITEM_NO_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_Line_Product_backup_14_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_STATUS_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\ImportExcel_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_MANAGE_bckup_15_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_LOAD_APPLECORE_SCHEDULE_backup_15_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_VarientSeqno_backup_15_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_ProductSeqno_backup_15_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_ITEM_MANAGE_backup_15_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_SCHEDULE_DETAILS_backup_18_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_MODULES_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_FACILITY_DETAILS_backup_18_06_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_VarientSeqno_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_DELETE_ITEM_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_ROLES_DETAILS_Module_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_BOTTOM_THREE_PERFORMERS_REPORT_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_BUILD_GRADE_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_CATEGORY_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_DTDETAILS_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_DTREASON_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_FACILITY_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_BUILD_GRADE_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_CATEGORY_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_Line_Product_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_DTDETAILS_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_DTREASON_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_Change_ProductSeqno_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_FACILITY_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_ITEM_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_LINE_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_LINE_FACILITY_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_RE_RUN_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_REASON_CATEGORY_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\Usp_DOR_Send_email_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_DEVIATION_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_SCHEDULE_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_UPLOAD_DETAILS_BACKUP_11072018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_SHIFT_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_SHIFT_ENTRY_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_UPLOAD_DETAILS_REPORT_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_UPLOAD_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\USP_DOR_GET_USER_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_DEVIATION_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_USER_ROLES_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_WASTE_TYPE_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\GetUserRoles_backup_01_07_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\GetUserRoles_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_WASTEENTRY_DETAILS_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_GET_ROLES_DETAILS_Module_backup_01_08_2018_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_ITEM_MANAGE_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DOR_ROLES_MANAGE_backup_01_08_2018_1.sql" />
+    <Build Include="dbo\User Defined Types\ImportExcelTableType_1.sql" />
+    <Build Include="Security\rf_user_certi_1.sql" />
+    <Build Include="Security\rf_user_symm_key_1.sql" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[RF_DWH_ITEM_newitems] (
+    [item_id]               INT             IDENTITY (1, 1) NOT NULL,
+    [item_no]               INT             NOT NULL,
+    [item_nm]               VARCHAR (1000)  NOT NULL,
+    [pro_seal_twin_crew]    INT             NULL,
+    [pro_seal_twin_t_max]   DECIMAL (18, 4) NULL,
+    [pro_seal_single_crew]  INT             NULL,
+    [pro_seal_single_t_max] DECIMAL (18, 4) NULL,
+    [over_wrap_crew]        INT             NULL,
+    [over_wrap_t_max]       DECIMAL (18, 4) NULL,
+    [table_crew]            INT             NULL,
+    [table_t_max]           DECIMAL (18, 4) NULL,
+    [bulk_crew]             INT             NULL,
+    [bulk_t_max]            DECIMAL (18, 4) NULL,
+    [play_book]             VARCHAR (1000)  NULL,
+    [category_id]           INT             NULL,
+    [twin_build_grade_id]   INT             NULL,
+    [single_build_grade_id] INT             NULL,
+    [flow_build_grade_id]   INT             NULL,
+    [table_build_grade_id]  INT             NULL,
+    [inserted_date]         DATETIME        NOT NULL,
+    [inserted_by]           VARCHAR (50)    NOT NULL,
+    [modified_date]         DATETIME        NULL,
+    [modified_by]           VARCHAR (50)    NULL,
+    [deleted_date]          DATETIME        NULL,
+    [deleted_by]            VARCHAR (50)    NULL
+);
+

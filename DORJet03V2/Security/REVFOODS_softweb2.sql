@@ -1,0 +1,2 @@
+﻿CREATE USER [REVFOODS\softweb2] FOR LOGIN [REVFOODS\softweb2];
+

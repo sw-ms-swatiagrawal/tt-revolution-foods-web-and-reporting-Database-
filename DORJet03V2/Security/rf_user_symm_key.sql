@@ -1,0 +1,5 @@
+﻿CREATE SYMMETRIC KEY [rf_user_symm_key]
+    AUTHORIZATION [dbo]
+    WITH ALGORITHM = AES_256
+    ENCRYPTION BY CERTIFICATE [rf_user_certi];
+

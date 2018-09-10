@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [REVFOODS\softweb2]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

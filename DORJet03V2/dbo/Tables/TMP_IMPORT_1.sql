@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[TMP_IMPORT] (
+    [id]                     INT             IDENTITY (1, 1) NOT NULL,
+    [applecore_product_id]   INT             NULL,
+    [applecore_variation_id] INT             NULL,
+    [PRODUCT_NAME]           VARCHAR (500)   NULL,
+    [variation_nm]           VARCHAR (50)    NULL,
+    [pro_seal_twin_crew]     INT             NULL,
+    [pro_seal_twin_t_max]    DECIMAL (18, 3) NULL,
+    [pro_seal_single_crew]   INT             NULL,
+    [pro_seal_single_t_max]  DECIMAL (18)    NULL,
+    [over_wrap_crew]         INT             NULL,
+    [over_wrap_t_max]        DECIMAL (18)    NULL,
+    [table_crew]             INT             NULL,
+    [table_t_max]            DECIMAL (18)    NULL,
+    [bulk_crew]              INT             NULL,
+    [bulk_t_max]             DECIMAL (18)    NULL,
+    [play_book]              VARCHAR (500)   NULL,
+    [category_id]            VARCHAR (100)   NULL,
+    [twin_build_grade_id]    VARCHAR (50)    NULL,
+    [single_build_grade_id]  VARCHAR (50)    NULL,
+    [flow_build_grade_id]    VARCHAR (50)    NULL,
+    [table_build_grade_id]   VARCHAR (50)    NULL,
+    [default_line_id]        VARCHAR (50)    NULL,
+    [inserted_date]          DATETIME        DEFAULT (getdate()) NULL
+);
+

@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[RF_DWH_ROLE_FACILITY] (
+    [role_facility_id] INT IDENTITY (1, 1) NOT NULL,
+    [role_id]          INT NOT NULL,
+    [facility_id]      INT NOT NULL,
+    CONSTRAINT [PK_RF_DWH_ROLE_FACILITY] PRIMARY KEY CLUSTERED ([role_facility_id] ASC),
+    CONSTRAINT [FK_RF_DWH_ROLE_FACILITY_RF_DWH_FACILITY] FOREIGN KEY ([facility_id]) REFERENCES [dbo].[RF_DWH_FACILITY] ([facility_id]),
+    CONSTRAINT [FK_RF_DWH_ROLE_FACILITY_RF_DWH_ROLE_FACILITY] FOREIGN KEY ([role_id]) REFERENCES [dbo].[RF_DWH_ROLES] ([role_id])
+);
+

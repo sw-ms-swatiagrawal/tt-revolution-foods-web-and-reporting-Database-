@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [usp_DOR_STATUS_DETAILS]
+AS
+Begin  
+SET NOCOUNT ON; 
+SELECT status_id, status_desc FROM RF_DWH_STATUS 
+WHERE deleted_by IS NULL AND deleted_date IS NULL
+END

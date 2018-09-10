@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [RevFoodsWebCR]
+    WITH PASSWORD = N'+C{srZq|`kb@indnw0tfx$k>msFT7_&#$!~<4rtzZch|Gocw', SID = 0x0AD2EB90EA7F684CAC4D11587B0EF93E, DEFAULT_DATABASE = [RevFoodsWebCR], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+
