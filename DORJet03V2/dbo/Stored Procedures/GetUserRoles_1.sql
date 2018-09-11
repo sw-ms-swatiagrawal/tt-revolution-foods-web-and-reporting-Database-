@@ -5,8 +5,7 @@
       
 as      
 Begin      
-;With CTE as    
-(    
+;With CTE as  (    
  Select c.role_id, a.user_id,e.facility_id ,d.module_id, d.view_fg, d.insert_fg, d.update_fg, d.delete_fg,
  d.edit_locked_record_fg,d.add_locked_record_fg  From RF_DWH_USERS a      
  join RF_DWH_USER_ROLE b on b.user_id = a.user_id      
