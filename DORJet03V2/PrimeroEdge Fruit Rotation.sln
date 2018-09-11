@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "PrimeroEdge Fruit Rotation", "PrimeroEdge Fruit Rotation\PrimeroEdge Fruit Rotation.dtproj", "{8319EC28-A2CE-4AE4-A530-9B3A8E3BD5A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8319EC28-A2CE-4AE4-A530-9B3A8E3BD5A5}.Development|Default.ActiveCfg = Development
+		{8319EC28-A2CE-4AE4-A530-9B3A8E3BD5A5}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

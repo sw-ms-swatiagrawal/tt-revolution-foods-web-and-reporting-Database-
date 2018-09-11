@@ -112,15 +112,11 @@
     <Build Include="dbo\Views\vw_RF_DOR_UPLOAD_1.sql" />
     <Build Include="dbo\Views\VW_RF_DWH_LINE_ITEM_DETAILS_1.sql" />
     <Build Include="dbo\Views\VW_RF_WEEKLY_MEAL_PLANNING_AND_COSTING_STATISTICS_1.sql" />
-    <Build Include="Security\RevFoodsWeb_1.sql" />
-    <Build Include="Security\RevFoodsDOR_1.sql" />
     <Build Include="Security\REVFOODS_JET-ADMINS_1.sql" />
     <Build Include="Security\RevFoodsWebCR_2.sql" />
     <Build Include="Security\RevFoodsWebCR_3.sql" />
     <Build Include="Security\REVFOODS_softweb2_2.sql" />
     <Build Include="Security\REVFOODS_softweb2_3.sql" />
-    <Build Include="Security\RoleMemberships_1.sql" />
-    <Build Include="Security\RoleMemberships_2.sql" />
     <Build Include="Security\RoleMemberships_3.sql" />
     <Build Include="Security\RoleMemberships_4.sql" />
     <Build Include="dbo\Functions\fn_GetMaxSeqNumber_1.sql" />
@@ -137,7 +133,6 @@
     <Build Include="dbo\Stored Procedures\usp_DOR_WASTE_TYPE_MANAGE_1.sql" />
     <Build Include="dbo\Stored Procedures\usp_DOR_USERS_MANAGE_Role_1.sql" />
     <Build Include="dbo\Stored Procedures\usp_DOR_WASTEENTRY_MANAGE_1.sql" />
-    <Build Include="dbo\Stored Procedures\GetUserRoles1_1.sql" />
     <Build Include="dbo\Stored Procedures\ImportExcel_backup_20180806_1.sql" />
     <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_MANAGE_08272018_1.sql" />
     <Build Include="dbo\Stored Procedures\usp_DOR_SCHEDULE_DELETE_ITEM_08272018_1.sql" />
@@ -228,5 +223,10 @@
     <Build Include="dbo\User Defined Types\ImportExcelTableType_1.sql" />
     <Build Include="Security\rf_user_certi_1.sql" />
     <Build Include="Security\rf_user_symm_key_1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PrimeroEdge Fruit Rotation.sln" />
+    <None Include="AppleCoreDataLoad.sln" />
+    <None Include="SFUSD Import Transform.sln" />
   </ItemGroup>
 </Project>
